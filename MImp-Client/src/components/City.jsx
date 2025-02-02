@@ -8,7 +8,7 @@ import Currency from "./Currency";
 import PlacesCard from "./PlacesCard";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-
+import Navbar from "./Navbar";
 
 const City = (props) => {
 
@@ -19,6 +19,7 @@ const City = (props) => {
   const { data } = location.state || {};
   return (
     <>
+      <Navbar/>
       <div className="flex flex-col gap-10 p-2">
         <Weather name={data.cityname}/>
         <CityDetails data={data} />
@@ -28,7 +29,7 @@ const City = (props) => {
           Places
         </h1>
         <PlacesCard />
-        <div className="justify-center items-center flex">
+        <div className="flex items-center justify-center">
           <button className="box">Purchase</button>
         </div>
         <Air name={data.cityimg}/>
