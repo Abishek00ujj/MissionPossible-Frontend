@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = VITE_API;
+const API = import.meta.env.VITE_API;
 // const API = "http://localhost:1111";
 
 const getCities = async () => {

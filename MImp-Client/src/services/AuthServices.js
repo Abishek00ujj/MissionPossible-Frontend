@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getUserdata, removeUserdata } from '../services/storageServices';
 import {jwtDecode} from 'jwt-decode';   
-const API = VITE_API;
+const API = import.meta.env.VITE_API;
              
 // const API = 'http://localhost:1111';
 
