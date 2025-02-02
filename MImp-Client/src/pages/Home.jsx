@@ -82,7 +82,6 @@ const Home = () => {
             )}
           </div>
         </div>
-
         {/* Additional Content */}
         <div className="w-full flex flex-col items-center mt-12 relative z-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-white">Happy User's Review</h2>

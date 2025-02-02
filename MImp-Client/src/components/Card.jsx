@@ -27,6 +27,7 @@ const Card = (props) => {
   const handleCardClick = () => {
     navigate(`/city/`, { state: { data: props.data } });
   };
+  console.log(props.data);
   useEffect(() => {
     window.scrollTo(0, 0);
   })

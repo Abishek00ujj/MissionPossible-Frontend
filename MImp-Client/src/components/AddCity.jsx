@@ -65,7 +65,6 @@ const AddCity = () => {
                         <CircleX />
                     </Link>
                 </div>
-
                 <form onSubmit={handleSubmit} className="flex flex-col justify-center w-[80%] h-[80%] rounded-2xl items-center gap-4">
                     <h1 className="text-blue-600 text-2xl font-medium">City Details</h1>
                     
